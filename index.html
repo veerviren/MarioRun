@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Run</title>
+    <!-- <link rel="stylesheet" href="css/about.css"> -->
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="login_background.css">
+
+</head>
+<body>
+
+    <nav>
+        <label class="logo"> Mario Run </label>
+        <ul>
+            
+            <li><a class="active" onclick="myFunction()"> Toggle dark mode</a></li>
+        
+        </ul>
+    </nav>
+    
+    
+    <form class="box" action="app/maths.html">
+        <h1>login</h1>
+        <input size="60%" type="text" placeholder="Enter Username" id="username">
+        <!-- <input type="password" placeholder="Enter password" id="password"> -->
+        <input type="submit" value="login" onclick="validate()">
+    </form>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
